@@ -36,6 +36,7 @@ router.get('/', function(req, res, next) {
 
       var arr =  data.filter(function(person) {
         var distance = GetDistanceBetweenTwoCoordinates(51.509865, -0.118092, person.latitude, person.longitude);
+        distance < 81 ? person['distance'] = (distance * 0.62137).toFixed(2) : null;
         return distance <= 80.4672;
       });
 

@@ -1,25 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import Container from 'react-bootstrap/Container';
 import './App.css';
-import axios from 'axios';
+import Home from './containers/Home';
 
 function App() {
-  const [data, setData] = useState({ hits: [] });
-  useEffect(async () => {
-    const result = await axios(
-      'http://localhost:9000/people',
-    );
- 
-    setData(result.data);
-  },[]);
   
   return (
-    <ul>
-      {data.hits.map(item => (
-        <li key={item.objectID}>
-          <a href={item.url}>{item.title}</a>
-        </li>
-      ))}
-    </ul>
+  <Container>
+    <h1>Location App</h1>
+    <Home/>
+  </Container>
   );
 }
 
