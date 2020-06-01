@@ -39,7 +39,7 @@ router.get('/', function(req, res, next) {
         var distance = GetDistanceBetweenTwoCoordinates(51.509865, -0.118092, person.latitude, person.longitude);
         distance < radius ? person['distance'] = (distance * 0.62137).toFixed(2) : null;
         return distance <= radius;
-      });
+      }).sort((a,b) => { return a.distance - b.distance; });
 
       res.send(arr);
   });
