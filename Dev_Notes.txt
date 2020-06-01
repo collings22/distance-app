@@ -6,6 +6,7 @@ Progressive Enhancement/Extensibility
 - User selects person from list to mark X as distance from
 - Include visual map to see persons within radius
 - Utilise all available API endpoints
+- Create client side routes
 
 Testing and Logging/Validation
 - Research and develop Node.js unit tests
