@@ -1,0 +1,28 @@
+Developer notes for further development and considerations going forward.
+
+Progressive Enhancement/Extensibility
+- User inputs radius variable
+- User inputs location to mark X as distance from
+- User selects person from list to mark X as distance from
+- Include visual map to see persons within radius
+- Utilise all available API endpoints
+
+Testing and Logging/Validation
+- Research and develop Node.js unit tests
+- Develop React component based tests (did mount and validate content)
+- Enter appropriate 'benchmark' logs regarding progress of call 
+
+Security Considerations
+- JWT validation
+- Consider user authentication
+
+Error Handling
+- Try alternative route if initial route /people fails
+- Alternatively, produce error to User
+
+Multiple Devices and Platforms/Compatibilty
+- Test client on IE9
+- Test mobile views in browser
+
+Performance
+- Look into streaming for increased Performance
