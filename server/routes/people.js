@@ -26,7 +26,7 @@ function ConvertToRadian(degrees) {
 }
 
 router.get('/', function(req, res, next) {
-  var radius = (req.query.radius * 1.609);
+  var radius = (req.query.radius * 1.609344);
 
   request
     .get('https://bpdts-test-app.herokuapp.com/users', (error, response, body) => {

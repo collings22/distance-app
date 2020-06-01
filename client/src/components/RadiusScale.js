@@ -3,8 +3,9 @@ import Form from "react-bootstrap/Form";
 
 function RadiusScale(props) {
 
-  function handleChange(event) {           
-    props.parentCallback(event);
+  function handleChange(event) {   
+    props.parentCallback(event);       
+
   }
 
   return (
