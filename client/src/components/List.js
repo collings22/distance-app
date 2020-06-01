@@ -5,7 +5,7 @@ import Person from "./Person";
 function List(items) {
   return items.data.map((item) => (
 
-      <ListGroup.Item>
+      <ListGroup.Item key={item.id}>
         <Person data={item}/>
       </ListGroup.Item>
   ));
