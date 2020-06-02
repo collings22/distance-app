@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-//https://ip-api.com/docs/ used to get a persons region based on ip address
+//https://ip-api.com/docs/ used to get a persons region based on ip address - free to use, not consistent for SPA use
 
 function Person(props) {
     const [error, setError] = useState(null);
