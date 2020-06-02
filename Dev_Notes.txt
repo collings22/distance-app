@@ -27,3 +27,9 @@ Multiple Devices and Platforms/Compatibilty
 
 Performance
 - Look into streaming for increased Performance
+
+Boilerplates
+npx create react app
+npm express generator
+
+* NEED FURTHER CPD FOR UNIT TESTS *
